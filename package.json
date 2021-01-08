@@ -1,0 +1,18 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "description": "teste",
+  "main": "index.js",
+  "repository": "https://github.com/Krauzy/teste.git",
+  "author": "Krauzy <30305307+Krauzy@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "jsonfile": "^6.1.0",
+    "moment": "^2.29.1",
+    "random": "^2.2.0",
+    "simple-git": "^2.31.0"
+  }
+}
