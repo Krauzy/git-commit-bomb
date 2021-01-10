@@ -2,7 +2,7 @@
 
 A commit bomb that distributes commits on different dates, painting your activity chart green
 
-## Init
+## Start
 
 ```sh
 npm run start
