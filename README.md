@@ -38,9 +38,9 @@ package.json
 
 ## Example
 ### Before
-[![Empty](https://i.ibb.co/SPb514C/empty.png)](https://ibb.co/MsrZjx0)
+[![Empty](https://i.ibb.co/SPb514C/empty.png)](https://github.com/Krauzy)
 ### After
-[![Full](https://i.ibb.co/fSK5P9X/full.png)](https://ibb.co/KGQk3D5)
+[![Full](https://i.ibb.co/fSK5P9X/full.png)](https://github.com/Krauzy)
 
 # License
 Free
