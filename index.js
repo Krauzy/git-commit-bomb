@@ -3,7 +3,7 @@ const moment = require('moment');
 const simpleGit = require('simple-git');
 const random = require('random');
 
-const COMMIT_CONTS = 1000;
+const COMMIT_COUNTS = 1000;
 
 const FILE_PATH = './data.json';
 const makeCommit = (n) => {
