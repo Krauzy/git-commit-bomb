@@ -33,7 +33,7 @@ package.json
 
 ## Instructions
 - Fork this repos to your git
-- Run start whit npm or yarn
+- Run start using npm or yarn
 - (opcional) change `COMMIT_COUNT` value to the number of commits you want to "explode"
 
 ## Example
