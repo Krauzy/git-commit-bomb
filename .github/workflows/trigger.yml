@@ -1,35 +1,24 @@
-name: Trigger Bomb
+name: Explode the Bomb
 
 on:
-  workflow_dispatch:
-    inputs:
-      name:
-        # Friendly description to be shown in the UI instead of 'name'
-        description: 'Person to greet'
-        # Default value if no value is explicitly provided
-        default: 'World'
-        # Input has to be provided for the workflow to run
-        required: true
+  workflow_dispatch:  # Este evento aciona o workflow manualmente
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  bomb:
-    # The type of runner that the job will run on
+  build:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    
     steps:
-    - name: Checkout 🛎️
-    - uses: actions/checkout@v2
-    
-    - uses: actions/setup-node@v2-beta  
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
       with:
-          node-version: '12'
-          
-    - name: Install Dependecies
-      run: npm install
+        node-version: '14'
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Run yarn start
+      run: yarn start
       
-    - name: Run Bomb
-      run: npm run start
-    
-    
