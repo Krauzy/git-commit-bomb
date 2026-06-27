@@ -1,6 +1,7 @@
 # Git Commit Bomb
 
 A commit bomb that distributes commits on different dates, painting your activity chart green
+The current pattern writes `KRAUZY` on the GitHub contributions chart.
 
 ## Start
 
@@ -34,10 +35,11 @@ package.json
 ## Instructions
 - Fork this repos to your git
 - Run start using npm or yarn
-- (opcional) change `COMMIT_COUNT` value to the number of commits you want to "explode"
+- (opcional) set `COMMITS_PER_PIXEL` to control how many commits are created for each filled chart cell
+- The GitHub Actions workflow also runs once per day at 12:00 UTC
 
-```js
-const COMMIT_COUNTS = 1000;
+```sh
+COMMITS_PER_PIXEL=2 yarn start
 ```
 
 ## Example
